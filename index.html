@@ -5,13 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>John's Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="text-green-600 font-bold text-xl">John</div>
+      <ul class="flex space-x-4 text-gray-700 font-medium">
+        <li><a href="#about" class="hover:text-green-600">About</a></li>
+        <li><a href="#skills" class="hover:text-green-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-green-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-green-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Header -->
   <header class="bg-green-600 text-white p-10 text-center shadow-md">
     <h1 class="text-4xl font-bold mb-2">Hi, I'm John</h1>
     <p class="text-xl">Web Developer | Designer | Problem Solver</p>
+    <!-- Profile Image (Update the src with your image path) -->
+    <img src="your-photo.jpg" alt="John's Photo" class="w-32 h-32 rounded-full mx-auto mt-6 shadow-md" />
   </header>
 
   <!-- About Me -->
@@ -19,27 +39,27 @@
     <h2 class="text-3xl font-semibold mb-4 border-b-4 border-green-600 inline-block">About Me</h2>
     <p class="text-lg leading-relaxed">
       I'm a creative and detail-oriented web developer with a passion for building responsive, user-friendly websites.
-      I enjoy learning new technologies and solving real-world problems with elegant code.
+      I enjoy learning new technologies and solving real-world problems with elegant code. I'm specialized in core programming
+      languages including <span class="font-semibold text-green-700">Python, Java, C++, and C</span>. I believe in writing clean,
+      efficient, and maintainable code that makes a difference.
     </p>
   </section>
 
-  <!-- Projects -->
+  <!-- Special Skills -->
+  <section id="skills" class="max-w-4xl mx-auto bg-white rounded-lg shadow p-8 mt-10">
+    <h2 class="text-3xl font-semibold mb-4 border-b-4 border-green-600 inline-block">Special Skills</h2>
+    <ul class="list-disc pl-6 text-lg space-y-2">
+      <li><span class="text-green-700 font-semibold">Python:</span> Scripting, data analysis, backend development</li>
+      <li><span class="text-green-700 font-semibold">Java:</span> OOP concepts, building console and GUI-based apps</li>
+      <li><span class="text-green-700 font-semibold">C++:</span> STL, object-oriented design, performance optimization</li>
+      <li><span class="text-green-700 font-semibold">C:</span> Systems programming, embedded concepts, low-level logic</li>
+    </ul>
+  </section>
+
+  <!-- Projects (Cleared projects, just keeping the description) -->
   <section id="projects" class="max-w-4xl mx-auto bg-white rounded-lg shadow p-8 mt-10">
     <h2 class="text-3xl font-semibold mb-6 border-b-4 border-green-600 inline-block">Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <!-- Project 1 -->
-      <div class="border rounded-lg p-5 shadow hover:shadow-lg transition">
-        <h3 class="text-2xl font-bold mb-2">Portfolio Website</h3>
-        <p class="mb-3">A modern portfolio built with HTML and Tailwind CSS.</p>
-        <a href="#" target="_blank" class="text-green-600 font-semibold hover:underline">View Project</a>
-      </div>
-      <!-- Project 2 -->
-      <div class="border rounded-lg p-5 shadow hover:shadow-lg transition">
-        <h3 class="text-2xl font-bold mb-2">To-Do App</h3>
-        <p class="mb-3">A simple task manager built with JavaScript and local storage.</p>
-        <a href="#" target="_blank" class="text-green-600 font-semibold hover:underline">View Project</a>
-      </div>
-    </div>
+    <p class="text-lg mb-3">I have worked on several projects, including web and app development, system programming, and more. Feel free to reach out for more details on my work.</p>
   </section>
 
   <!-- Contact -->
@@ -52,6 +72,11 @@
       <li>GitHub: <a href="https://github.com/Johnprathibav" target="_blank" class="text-green-600 hover:underline">github.com/Johnprathibav</a></li>
     </ul>
   </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-6">
+    © 2025 John Prathibav. All rights reserved.
+  </footer>
 
 </body>
 </html>
